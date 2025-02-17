@@ -13,16 +13,6 @@ if (is_chrome_branded || is_chrome_for_testing_branded) {
   _default_ffmpeg_branding = "Chromium"
 }
 
-# Initialize declaration of Chancie Wancie build argument.
-declare_args() {
-  is_chancie_wancie_build = false
-}
-
-# Chancie Wancie build for testing ChromeOS ffmpeg branding on desktop Chromium.
-if (is_chancie_wancie_build && !is_mac) {
-  _default_ffmpeg_branding = "ChromeOS"
-}
-
 if (is_cast_android || is_castos) {
   _default_ffmpeg_branding = "Chrome"
 }

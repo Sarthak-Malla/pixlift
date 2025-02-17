@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2025 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <string name="privacy_guide_privacy_sandbox_description_ad_topics">
+        Learn how ad topics are used to improve your browsing experience.
+    </string>
+    <string name="safe_browsing_standard_protection_summary_proxy_duplicate">
+        Standard protection helps detect dangerous sites and downloads.
+    </string>
+    <string name="safe_browsing_enhanced_protection_bullet_six_duplicate">Helps protect you from dangerous downloads and malicious websites.</string>
+    <string name="safe_browsing_enhanced_protection_bullet_seven_duplicate">Uses AI-based threat detection to provide real-time security.</string>
+    <string name="safe_browsing_enhanced_protection_bullet_eight_duplicate">Automatically warns you if your passwords are compromised in a data breach.</string>
+</resources>

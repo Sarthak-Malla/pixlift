@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2025 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <plurals name="undo_bar_tab_groups_part">
+        <item quantity="one">%d tab group</item>
+        <item quantity="other">%d tab groups</item>
+    </plurals>
+
+    <plurals name="undo_bar_tab_groups_and_tabs_part">
+        <item quantity="one">%d tab group and tab</item>
+        <item quantity="other">%d tab groups and tabs</item>
+    </plurals>
+
+    <plurals name="recent_tabs_group_closure_without_title_accessibility">
+        <item quantity="one">Recently closed tab</item>
+        <item quantity="other">Recently closed tabs</item>
+    </plurals>
+
+    <plurals name="recent_tabs_group_closure_domain_text">
+        <item quantity="one">Closed tab from %s</item>
+        <item quantity="other">Closed tabs from %s</item>
+    </plurals>
+
+    <plurals name="recent_tabs_group_closure_without_title">
+        <item quantity="one">One recent tab closed</item>
+        <item quantity="other">%d recent tabs closed</item>
+    </plurals>
+
+    <plurals name="recent_tabs_group_closure_without_title_with_color_accessibility">
+        <item quantity="one">One colored recent tab closed</item>
+        <item quantity="other">%d colored recent tabs closed</item>
+    </plurals>
+</resources>
+

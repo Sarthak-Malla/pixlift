@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2021 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <string name="blocking_choice_dialog_first_title">Your first dialog title</string>
+    <string name="blocking_choice_dialog_first_message">Your first dialog message</string>
+    <string name="blocking_choice_dialog_second_title">Your second dialog title</string>
+    <string name="blocking_choice_dialog_second_message">Your second dialog message</string>
+</resources>

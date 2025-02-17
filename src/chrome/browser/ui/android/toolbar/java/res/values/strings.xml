@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2025 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <string name="adaptive_toolbar_button_preference_page_summary">Customize your toolbar button preferences.</string>
+    <string name="address_bar_settings">Address Bar Settings</string>
+    <string name="address_bar_settings_top">Top Address Bar</string>
+    <string name="address_bar_settings_bottom">Bottom Address Bar</string>
+
+    <string name="iph_tab_switcher_switch_out_of_incognito_text">Switching out of Incognito mode...</string>
+    <string name="iph_tab_switcher_switch_out_of_incognito_accessibility_text">Exit Incognito mode.</string>
+
+    <string name="iph_tab_switcher_switch_into_incognito_text">Switching into Incognito mode...</string>
+    <string name="iph_tab_switcher_switch_into_incognito_accessibility_text">Enter Incognito mode.</string>
+
+    <string name="iph_android_tab_declutter_text">Declutter your tabs for better organization.</string>
+    <string name="iph_android_tab_declutter_accessibility_text">Declutter tabs for accessibility.</string>
+
+    <string name="menu_switch_to_incognito">Switch to Incognito</string>
+    <string name="menu_switch_out_of_incognito">Exit Incognito Mode</string>
+</resources>

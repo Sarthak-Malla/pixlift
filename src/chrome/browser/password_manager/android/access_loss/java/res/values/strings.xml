@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2021 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+
+<resources>
+    <string name="pwd_access_loss_warning_no_gms_core_title">Password access loss warning (No GMS Core)</string>
+    <string name="pwd_access_loss_warning_no_gms_core_text">Your device does not have Google Mobile Services (GMS) Core. Password access may be restricted.</string>
+    <string name="pwd_access_loss_warning_no_gms_core_button_text">Learn More</string>
+
+    <string name="pwd_access_loss_warning_update_gms_core_title">Update Google Mobile Services Core</string>
+    <string name="pwd_access_loss_warning_update_gms_core_text">Your GMS Core is outdated. Please update it to continue using password management features.</string>
+    <string name="pwd_access_loss_warning_update_gms_core_button_text">Update Now</string>
+
+    <string name="pwd_access_loss_warning_manual_migration_title">Manual Migration Required</string>
+    <string name="pwd_access_loss_warning_manual_migration_text">To retain access to your saved passwords, you must manually migrate your data.</string>
+    <string name="pwd_access_loss_warning_manual_migration_button_text">Migrate Now</string>
+
+    <string name="pwd_access_loss_notification_no_gms_core_text">Password access may be restricted due to missing Google Mobile Services (GMS) Core.</string>
+    <string name="pwd_access_loss_notification_update_gms_core_text">Your GMS Core is outdated. Update now to continue using password management features.</string>
+
+    <string name="access_loss_no_gms_title">Password Access Restricted</string>
+    <string name="access_loss_update_gms_title">Update Google Mobile Services</string>
+    <string name="access_loss_fix_problem_title">Fix Password Access Issue</string>
+    <string name="access_loss_no_gms_desc">Your device does not have Google Mobile Services (GMS), which may restrict password access.</string>
+    <string name="access_loss_update_gms_desc">Your Google Mobile Services (GMS) version is outdated. Update now to continue using password management.</string>
+    <string name="access_loss_fix_problem_desc">A problem was detected with password access. Follow the steps to resolve the issue.</string>
+    <string name="access_loss_no_gms_positive_button_text">Learn More</string>
+    <string name="access_loss_fix_problem_positive_button_text">Fix Now</string>
+</resources>

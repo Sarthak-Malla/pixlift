@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2021 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <string name="autofill_options_restart_prompt_title">Restart Required</string>
+    <string name="autofill_options_restart_prompt_text">To apply changes to Autofill settings, please restart your browser.</string>
+
+    <string name="autofill_options_hint_3p_setting_disabled">Third-party autofill is disabled.</string>
+    <string name="autofill_options_hint_3p_setting_ready">Third-party autofill is ready to use.</string>
+</resources>

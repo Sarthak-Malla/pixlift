@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2021 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <string name="access_loss_export_dialog_title_no_gms">Cannot Export Passwords Without GMS</string>
+    <string name="access_loss_export_dialog_title">Export Your Saved Passwords</string>
+    <string name="access_loss_export_dialog_message">Exporting your passwords will remove access from this device. Do you want to continue?</string>
+    <string name="access_loss_export_dialog_positive_button_text">Export</string>
+
+    <string name="access_loss_import_dialog_title">Import Passwords</string>
+    <string name="access_loss_import_dialog_desc">Import your saved passwords securely.</string>
+    <string name="access_loss_import_dialog_positive_button_text">Import</string>
+
+    <string name="access_loss_pref_desc">Manage password access and settings.</string>
+</resources>

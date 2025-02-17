@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2025 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <string name="data_sharing_invitation_failure_title">
+        Invitation Failed
+    </string>
+    <string name="data_sharing_invitation_failure_description">
+        We were unable to send the invitation. Please try again.
+    </string>
+    <string name="data_sharing_invitation_failure_button">
+        Retry
+    </string>
+</resources>

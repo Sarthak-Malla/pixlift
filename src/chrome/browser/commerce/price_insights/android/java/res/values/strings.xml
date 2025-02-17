@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2025 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+<resources>
+    <string name="price_insights_content_price_tracking_disabled_button_text">
+        Price tracking is disabled
+    </string>
+    <string name="price_insights_content_price_tracking_enabled_button_text">
+        Price tracking is enabled
+    </string>
+    <string name="price_insights_content_price_tracking_error_message">
+        An error occurred while tracking the price
+    </string>
+    <string name="price_insights_content_price_tracked_success_notification_enabled_message">
+        Price tracking has been successfully enabled
+    </string>
+    <string name="price_insights_content_price_tracked_success_notification_disabled_message">
+        Price tracking has been successfully disabled
+    </string>
+    <string name="price_insights_content_price_untracked_success_message">
+        The price is no longer being tracked
+    </string>
+    <string name="price_history_multiple_catalogs_title">
+        Price history for multiple catalogs
+    </string>
+    <string name="price_insights_content_price_tracking_button_action_description">
+        Toggle price tracking for this product
+    </string>
+    <string name="price_history_chart_content_description">
+        Price history chart for this product
+    </string>
+    <string name="price_insights_open_url_button_content_description">Opens the product page for more details.</string>
+    <string name="price_insights_open_url_title">View Product</string>
+    <string name="price_insights_content_price_tracking_description">Track price changes and get notified when the price drops.</string>
+</resources>

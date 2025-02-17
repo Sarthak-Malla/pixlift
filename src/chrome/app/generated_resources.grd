@@ -13574,6 +13574,9 @@ This can include information about installed software, files, your browser, and 
       <message name="IDS_DIRECTORY_LISTING_DATE_MODIFIED" desc="When viewing a local directory, this is the text for the column above the last modified dates.">
         Date Modified
       </message>
+      <message name="IDS_DIRECTORY_LISTING_PARSING_ERROR_BOX_TEXT" desc="Error message displayed when a directory listing parsing error occurs.">
+        An error occurred while parsing the directory listing.
+      </message>
 
       <!-- Saving Page-->
       <message name="IDS_SAVE_PAGE_DESC_HTML_ONLY" desc="In the Save Page dialog, the description of saving only the HTML of a webpage.">

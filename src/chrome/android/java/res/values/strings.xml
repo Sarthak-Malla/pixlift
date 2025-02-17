@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2025 The Chromium Authors
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+
+<resources>
+    <string name="undo_bar_tab_group_deleted_message">Tab group deleted</string>
+    <string name="undo_bar_tab_group_closed_and_saved_message">Tab group closed and saved</string>
+    <string name="undo_bar_tab_group_closed_message">Tab group closed</string>
+    <string name="undo_bar_deleted_message">Deleted</string>
+    <string name="undo_bar_closed_and_saved_message">Closed and saved</string>
+    <string name="undo_bar_closed_message">Closed</string>
+    <string name="auth_tab_secured_by_chrome_template">Secured by Chrome</string>
+    <string name="rtl_gesture_nav_iph_dialog_title">Gesture Navigation Title</string>
+    <string name="rtl_gesture_nav_iph_dialog_content">Gesture Navigation Content</string>
+    <string name="page_info_connection_transient_pdf_insecure">Insecure PDF Connection</string>
+    <string name="gpc_title">Global Privacy Control</string>
+    <string name="archived_tab_iph_card_subtitle_autodelete_section">Autodelete section</string>
+    <string name="data_sharing_generic_failure_title">Data Sharing Failed</string>
+    <string name="data_sharing_generic_failure_description">Failed to share data</string>
+    <string name="accessibility_tabstrip_tab_notification">Tab notification</string>
+    <string name="recent_tabs_group_closure_with_title_with_color_accessibility">Your accessibility text here</string>
+    <string name="incognito_badge">Incognito Mode</string>
+    <string name="gpc_description">Enable Global Privacy Control to send requests to websites for enhanced privacy.</string>
+    <string name="prefs_section_autofill">Manage your saved addresses, payment methods, and passwords.</string>
+</resources>
