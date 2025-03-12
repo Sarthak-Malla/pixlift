@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grit base_dir="." latest_public_release="0" current_release="1">
+  <outputs>
+    <output filename="grit/pixlift_resources.h" type="rc_header">
+      <emit emit_type="prepend"></emit>
+    </output>
+    <output filename="grit/pixlift_resources_map.cc" type="resource_file_map_source" />
+    <output filename="grit/pixlift_resources_map.h" type="resource_map_header" />
+    <output filename="pixlift_resources.pak" type="data_package" />
+  </outputs>
+  <release seq="1">
+    <includes>
+      <include file="xlsr_quantized.tflite" name="IDR_PIXLIFT_XLSR_QUANTIZED_TFLITE" type="BINDATA" />
+    </includes>
+  </release>
+</grit>

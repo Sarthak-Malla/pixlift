@@ -1274,6 +1274,10 @@
     "includes": [8000],
     "structures": [8020],
   },
+  "third_party/blink/renderer/platform/image-decoders/pixlift/res/pixlift_resources.grd": {
+    "includes": [8030],
+    "messages": [8040],
+  },
   "third_party/blink/public/strings/blink_strings.grd": {
     "messages": [8060],
   },

@@ -1,0 +1,11 @@
+import("//tools/grit/grit_rule.gni")
+
+grit("pixlift_resources") {
+  source = "pixlift_resources.grd"
+  outputs = [
+    "grit/pixlift_resources.h",
+    "grit/pixlift_resources_map.cc",
+    "grit/pixlift_resources_map.h",
+    "pixlift_resources.pak",
+  ]
+}
