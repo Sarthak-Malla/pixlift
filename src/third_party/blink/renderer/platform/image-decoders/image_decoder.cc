@@ -608,40 +608,59 @@ int ImageDecoder::RepetitionCount() const {
 ImageFrame* ImageDecoder::DecodeFrameBufferAtIndex(wtf_size_t index) {
   TRACE_EVENT0("blink", "ImageDecoder::DecodeFrameBufferAtIndex");
 
+  // Log that we're attempting to decode this specific frame
+  LOG(INFO) << "PixLift: Decoding frame index " << index << ".";
+
   if (index >= FrameCount()) {
+    LOG(WARNING) << "PixLift: Invalid frame index " << index
+                 << "; exceeds total frames=" << FrameCount() << ".";
     return nullptr;
   }
+
+  // Retrieve the ImageFrame for the requested index
   ImageFrame* frame = &frame_buffer_cache_[index];
+
+  // If this frame isn't yet complete, decode it now
   if (frame->GetStatus() != ImageFrame::kFrameComplete) {
     TRACE_EVENT1(TRACE_DISABLED_BY_DEFAULT("devtools.timeline"), "Decode Image",
                  "imageType", FilenameExtension().Ascii());
+    LOG(INFO) << "PixLift: Frame " << index << " is not complete; decoding now.";
     Decode(index);
   }
 
-  // Apply super resolution to the frame's bitmap if needed
+  // Check if frame is now complete and ready for super-resolution
   if (frame->GetStatus() == ImageFrame::kFrameComplete) {
-    // Extract the bitmap from the frame.
+    LOG(INFO) << "PixLift: Frame " << index << " is complete, considering super-resolution.";
+
+    // Access the frame’s bitmap
     const SkBitmap& input_bitmap = frame->Bitmap();
 
-    // Process only if the bitmap is valid and ready to draw.
+    // Only run super-resolution if the bitmap is valid and ready to draw
     if (input_bitmap.readyToDraw()) {
-        SkBitmap output_bitmap;
-        
-        // Run super resolution on the input bitmap.
-        // This function converts the input bitmap to a tensor,
-        // runs the TFLite model, and converts the output tensor back to an SkBitmap.
-        if (pixlift::ApplySuperResolution(input_bitmap, &output_bitmap)) {
-            // Update the frame's bitmap with the new, upscaled bitmap.
-            // We assume that ImageFrame has a setter method, SetBitmap,
-            // which properly updates its private bitmap_ member.
-            frame->SetBitmap(output_bitmap);
-        }
-    }
-}
+      LOG(INFO) << "PixLift: Bitmap is ready to draw for frame " << index << ".";
 
+      SkBitmap output_bitmap;
+
+      // Apply super-resolution (converts to tensor, runs TFLite model, converts back)
+      if (pixlift::ApplySuperResolution(input_bitmap, &output_bitmap)) {
+        // If super-resolution succeeded, update the frame’s bitmap
+        LOG(INFO) << "PixLift: Super-resolution succeeded for frame " << index
+                  << ". Updating frame’s bitmap.";
+        frame->SetBitmap(output_bitmap);
+      } else {
+        LOG(ERROR) << "PixLift: Super-resolution FAILED for frame " << index << ".";
+      }
+    } else {
+      LOG(WARNING) << "PixLift: Bitmap not ready to draw for frame " << index
+                   << ", skipping super-resolution.";
+    }
+  }
+
+  // Notify that the frame’s pixels may have changed
   frame->NotifyBitmapIfPixelsChanged();
   return frame;
 }
+
 
 bool ImageDecoder::FrameHasAlphaAtIndex(wtf_size_t index) const {
   return !FrameIsReceivedAtIndex(index) ||
